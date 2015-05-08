@@ -2,4 +2,4 @@
 for serv in snmpd memcached mysql exim rabbitmq-server zenoss crond jexec ; do
     service $serv start
 done
-/bin/bash
+tail -f /opt/zenoss/log/*.log
