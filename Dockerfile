@@ -11,6 +11,7 @@ RUN cd /tmp/ && \
     tar xvf auto.tar.gz
 RUN cd /tmp/skrobul-core-autodeploy-* && ./core-autodeploy.sh
 ADD start_zenoss.sh /
+RUN chmod +x /start_zenoss.sh
 EXPOSE 8080
 EXPOSE 514
 EXPOSE 162
